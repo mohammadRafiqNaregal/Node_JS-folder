@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI: Debug",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/enterprise-knowledge-assistant/fastapi-clean/.venv/bin/uvicorn",
+      "args": ["main:app", "--host", "127.0.0.1", "--port", "8000"],
+      "cwd": "${workspaceFolder}/enterprise-knowledge-assistant/fastapi-clean",
+      "justMyCode": true,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "FastAPI: Dev Reload",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/enterprise-knowledge-assistant/fastapi-clean/.venv/bin/uvicorn",
+      "args": ["main:app", "--host", "127.0.0.1", "--port", "8000", "--reload"],
+      "cwd": "${workspaceFolder}/enterprise-knowledge-assistant/fastapi-clean",
+      "justMyCode": true,
+      "console": "integratedTerminal"
+    }
+  ]
+}
